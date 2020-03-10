@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraping</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="img/png" href="img/icon.png" style="width: 100%;" />
+    </head>
+    <body>
+        <div class="col-md-12 text-center mt-3" style="color: #F05526;">
+            <h2><b>Data Scraping</b></h2>
+        </div>
+        <br>
+        <div class="row">
+            <div class="container">
+                <div class="table-responsive-sm">
+                    <table class="table table-sm table-bordered" id="table">
+                        <caption>Republika Online</caption>
+                        <thead>
+                            <tr class="table-primary">
+                                <th scope="col">No</th>
+                                <th scope="col">Judul</th>
+                                <th scope="col">Kategori</th>
+                                <th scope="col">Waktu Publish</th>
+                                <th scope="col">Waktu Scraping</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div> 
+        
+        <script src="jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.getJSON("dump.json", function(data){
+                var datanya = '';
+                $.each(data, function(key, value){
+                    datanya += '<tr>';
+                    datanya += '<td>'+(key+1)+'</td>';
+                    datanya += '<td>'+value.category+'</td>';
+                    datanya += '<td>'+value.title+'</td>';
+                    datanya += '<td>'+value.upload+'</td>';
+                    datanya += '<td>'+value.update+'</td>';
+                });
+                $('#table').append(datanya);
+            });
+        });
+    </script>
+
+    </body>
+
+</html>
