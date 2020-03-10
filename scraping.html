@@ -75,66 +75,30 @@
       Genre Section
     ============================-->
     <section id="about">
-
-      <div class="container">
-        <div class="row" style="width: max-content;">
-          <div class="col-lg-7 col-md-6">
-            <div class="about-content">
-              <h2>Choose your genre!</h2>
-              <div class="row">
-                <section id="services">
-                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="max-width: 30%; display: inline-block">
-                  <div class="box">
-                    <div><img src="img/piano.jpg" style="width: 95px; height: auto"></div>
-                    <h4 class="title"><a href="toppop.html">TOP POP</a></h4>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="max-width: 30%; display: inline-block; clear: left;">
-                  <div class="box">
-                    <div><img src="img/kendang.jpg" style="width: 95px; height: auto"></div>
-                    <h4 class="title"><a href="topdut.html">TOP DUT</a></h4>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="max-width: 30%; display: inline-block">
-                  <div class="box">
-                    <div><img src="img/guitar.jpg" style="width: 95px; height: auto"></div>
-                    <h4 class="title"><a href="topindie.html">TOP INDIE</a></h4>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="max-width: 30%; display: inline-block;">
-                  <div class="box">
-                    <div><img src="img/dj.jpg" style="width: 95px; height: auto"></div>
-                    <h4 class="title"><a href="topedm.html">TOP EDM</a></h4>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="max-width: 30%; display: inline-block">
-                  <div class="box">
-                    <div><img src="img/vinyl.jpg" style="width: 95px; height: auto"></div>
-                    <h4 class="title"><a href="topjazz.html">TOP JAZZ</a></h4>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="max-width: 30%; display: inline-block">
-                  <div class="box">
-                    <div><img src="img/drum.jpg" style="width: 95px; height: auto"></div>
-                    <h4 class="title"><a href="topreggae.html">TOP REGGAE</a></h4>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="max-width: 30%; display: inline-block">
-                  <div class="box">
-                    <div><img src="img/bass.jpg" style="width: 95px; height: auto"></div>
-                    <h4 class="title"><a href="toprock.html">TOP ROCK</a></h4>
-                  </div>
-                </div>
-              </section>
-              </div>
+    <div class="col-md-12 text-center mt-3" style="color: #F05526;">
+        <h2><b>Data Scraping</b></h2>
+    </div>
+    <br>
+    <div class="row">
+        <div class="container">
+            <div class="table-responsive-sm">
+                <table class="table table-sm table-bordered" id="table">
+                    <caption>Republika Online</caption>
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">No</th>
+                            <th scope="col">Judul</th>
+                            <th scope="col">Kategori</th>
+                            <th scope="col">Waktu Publish</th>
+                            <th scope="col">Waktu Scraping</th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     </section><!-- #about -->
-
-
 
 
   </main>
@@ -172,6 +136,23 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+   <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.getJSON("Fantastic.json", function(data){
+                var datanya = '';
+                $.each(data, function(key, value){
+                    datanya += '<tr>';
+                    datanya += '<td>'+(key+1)+'</td>';
+                    datanya += '<td>'+value.category+'</td>';
+                    datanya += '<td>'+value.title+'</td>';
+                    datanya += '<td>'+value.upload+'</td>';
+                    datanya += '<td>'+value.update+'</td>';
+                });
+                $('#table').append(datanya);
+            });
+        });
+    </script>
 
 </body>
 </html>
