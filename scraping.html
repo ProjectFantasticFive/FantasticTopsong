@@ -136,10 +136,10 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-   <script src="js/jquery-2.1.4.min.js"></script>
+   <script src="jquery-2.1.4.min.js"></script>
     <script>
         $(document).ready(function(){
-            $.getJSON("Fantastic.json", function(data){
+            $.getJSON("dump.json", function(data){
                 var datanya = '';
                 $.each(data, function(key, value){
                     datanya += '<tr>';
