@@ -29,7 +29,7 @@ for terkini in obj.find_all('div', class_='teaser_conten1'):
         "category": str(terkini.find('p').text),
         "title": str(terkini.find('h2').text),
         "upload": str(terkini.find('div', class_='date').text),
-        "update": str(current.strftime('%IY-%m-%d %H:%M:%S %p'))
+        "update": str(current.strftime('%Y-%m-%d %H:%M:%S %p'))
     }
     list.append(latest)
 
