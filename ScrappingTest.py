@@ -87,7 +87,7 @@ lastest_array[0]
 
 
 # In[9]:
-
+    
 
 with open('dump.json') as json_file: 
     try:
@@ -97,28 +97,6 @@ with open('dump.json') as json_file:
         write_json(data)
     except:
         write_json(lastest_array)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
