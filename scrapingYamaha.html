@@ -62,7 +62,13 @@
               <li><a href="signup.html">Sign Up</a></li>
             </ul>
           </li>
-          <li><a href="scraping.html">WebScraping</a></li>
+          <li class="drop-down"><a href="">Web Scraping</a>
+            <ul>
+              <li><a href="scrapingRepublika.html">Scraping Republika</a></li>
+              <li><a href="scrapingNuansa.html">Scraping Nuansa</a></li>
+              <li><a href="scrapingYamaha.html">Scraping Yamaha</a></li>
+            </ul>
+          </li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -74,33 +80,7 @@
     <!--==========================
       Genre Section
     ============================-->
-    <section id="about">
-    <div class="col-md-12 text-center mt-3" style="color: #0f4c81;">
-        <h2><b>Data Scraping</b></h2>
-    </div>
-    <br>
-    <div class="row">
-        <div class="container">
-            <div class="table-responsive-sm">
-                <table class="table table-sm table-bordered" id="table">
-                    <caption>Republika Online</caption>
-                    <thead>
-                        <tr class="table-primary">
-                            <th scope="col">No</th>
-                            <th scope="col">Judul</th>
-                            <th scope="col">Kategori</th>
-                            <th scope="col">Waktu Publish</th>
-                            <th scope="col">Waktu Scraping</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    </section><!-- #about -->
-
-
+    
   </main>
 
   <!--==========================
@@ -135,24 +115,5 @@
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-   <script src="jquery-2.1.4.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.getJSON("dump.json", function(data){
-                var datanya = '';
-                $.each(data, function(key, value){
-                    datanya += '<tr>';
-                    datanya += '<td>'+(key+1)+'</td>';
-                    datanya += '<td>'+value.title+'</td>';
-                    datanya += '<td>'+value.category+'</td>';
-                    datanya += '<td>'+value.upload+'</td>';
-                    datanya += '<td>'+value.update+'</td>';
-                });
-                $('#table').append(datanya);
-            });
-        });
-    </script>
-
 </body>
 </html>
