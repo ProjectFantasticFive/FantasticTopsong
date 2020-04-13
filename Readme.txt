@@ -11,7 +11,9 @@
 Nama : Fantastic Top songs
 Deskripsi Website :
 	Musik merupakan seni yang melukiskan tentang keindahan yang disajikan dalam bentuk suara. Saat ini, musik bisa dikatakan sudah menjadi kebutuhan bagi manusia. Acara musik di televisi dan radio pun semakin banyak. Hampir semua orang setiap harinya mendengarkan musik. Ketika sedang santai, bekerja, belajar, di jalan, hendak tidur, bahkan saat ini banyak orang membawa telepon genggamnya ke kamar mandi hanya untuk mendengarkan musik saat sedang mandi. Memang terdengar konyol, akan tetapi inilah faktanya. Musik sangat berperan dalam kehidupan sehari-hari manusia.
+	
 	Banyak orang beranggapan bahwa dengan mendengarkan musik, dapat menghilangkan stress. Maka dari itu, saat ini Fantastic Top Songs hadir untuk memenuhi kebutuhan manusia akan musik. Website Fantastic Top Songs ini memberikan kemudahan bagi para pengguna untuk mengetahui tren musik terbaru dan mencari genre musik kesukaannya. Hal tersebut dapat membantu para musisi untuk mendapatkan lebih banyak eksposur sehingga sering didengarkan oleh para pendengar musik.
+	
 	Mempertimbangkan banyaknya pendengar musik di Indonesia, Fantastic Top Songs bertujuan untuk memajukan Top Charts dan menambahkan tangga lagu. Dalam Fantastic Top Songs terdapat tangga lagu yang terdiri dari 10 rekomendasi lagu yang sedang hits perbulannya. Selain itu, terdapat beberapa artikel yang berisi Top 10 lainnya yang berkaitan dengan musik diantaranya Top Genre,  (Top Pop, Top Dut, Top Indie, Top EDM, Top Jazz, Top Rege, Top Rock) dan  Top Musician. Sehingga website ini akan terus mengupdate tangga lagu setiap bulan untuk memenuhi kebutuhan pengguna yang ingin mengetahui lebih banyak menganai Top Chart musik khusnya yang sedang hits di Indonesia. Lagu –  lagu yang bertahan di posisi Top Chart terkadang akan menjadi suatu kebanggan bagi musisi tersebut.
 
 
