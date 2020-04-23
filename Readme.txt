@@ -1,10 +1,12 @@
 # Task 4.2 Rancangan Website Static
 
-●	Ali Nurdin		- 191524004
-●	Farra Jessica		- 191524008
-●	Hanifah Ghina N		- 191524010
-●	Laras Rasdiyani		- 191524016
-●	Linda Damayanti		- 191524017
+* Nama Kelompok 	: Fantastic Five
+* Manager		      : Trisna Gelar Abdillah
+* Leader		    	: Laras Rasdiyani - 191524016
+* Analyst		    	: Hanifah Ghina Nabila - 191524010
+* Designer 	    	: Farra Jessica - 191524008 
+* Programmer  		: Ali Nurdin -  191524004
+                    Linda Damayanti - 191524017
 
 User Persona:
 User 1:
